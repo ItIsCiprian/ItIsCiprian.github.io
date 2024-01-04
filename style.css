@@ -2,20 +2,17 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    color: #fff;
-    font-family: 'Courier New', monospace;
-}
-
-.matrix-background {
-    background-color: black;
-    background-image: url('Matrix Green Code.png'); /* Use the actual file name */
+    color: #cfd2d6; /* Lighter text color for better readability */
+    font-family: 'Roboto', sans-serif; /* More modern font than Courier New */
+    background-color: #0a0c0d; /* Dark background color to match the background image */
+    background-image: url('background.jpg'); /* Use the actual file name */
     background-size: cover;
     background-attachment: fixed;
 }
 
 nav {
-    /* Simple navigation bar at the top */
-    background-color: #111;
+    /* Simplified navigation bar at the top */
+    background-color: #222831; /* Darker shade for nav to blend with the background */
     overflow: hidden;
 }
 
@@ -31,14 +28,14 @@ nav li {
 
 nav a {
     display: inline-block;
-    color: #3c9;
+    color: #00adb5; /* A shade of teal for a pop of color */
     text-decoration: none;
     padding: 14px 16px;
 }
 
 nav a:hover {
-    background-color: #555;
-    color: white;
+    background-color: #393e46; /* A slightly lighter shade for hover effect */
+    color: #eeeeee; /* Bright color for text on hover */
 }
 
 header {
@@ -51,16 +48,17 @@ header h1 {
 }
 
 section {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(35, 39, 42, 0.9); /* Semi-transparent black for readable sections */
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
+    color: #cfd2d6; /* Match the text color to the body */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #111;
+    background-color: #222831; /* Matching the nav bar */
 }
 
 /* Responsive typography and containers */
