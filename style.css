@@ -3,39 +3,73 @@ body, html {
     padding: 0;
     height: 100%;
     color: #fff;
+    font-family: 'Courier New', monospace;
 }
 
 .matrix-background {
     background-color: black;
-    /* Matrix Code Background */
-    background-image: url('Matrix Green Code.png'); /* Replace with your matrix code background image */
+    background-image: url('Matrix Green Code.png'); /* Use the actual file name */
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Courier New', monospace;
 }
 
 nav {
-    /* Styling for the navigation bar */
+    /* Simple navigation bar at the top */
+    background-color: #111;
+    overflow: hidden;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    color: #3c9;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: white;
 }
 
 header {
-    /* Styling for the header with large text */
     text-align: center;
-    padding: 50px;
+    padding: 100px 10px;
 }
 
-.about, .skillset, .experience {
-    /* Sections with semi-transparent background for readability */
-    background-color: rgba(0, 0, 0, 0.7);
+header h1 {
+    font-size: 2.5em;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.8);
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
 }
 
 footer {
-    /* Styling for the footer */
     text-align: center;
     padding: 20px;
+    background-color: #111;
 }
 
-/* Add additional styles for layout, typography, and responsiveness */
+/* Responsive typography and containers */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    nav a {
+        padding: 10px;
+    }
+}
