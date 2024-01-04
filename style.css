@@ -8,7 +8,7 @@ body, html {
 .matrix-background {
     background-color: black;
     /* Matrix Code Background */
-    background-image: url('matrix-code.jpg'); /* Replace with your matrix code background image */
+    background-image: url('Matrix Green Code.png'); /* Replace with your matrix code background image */
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Courier New', monospace;
