@@ -61,6 +61,28 @@ footer {
     background-color: #222831; /* Matching the nav bar */
 }
 
+/* About section styles */
+#about h2, #about h3 {
+    color: #00adb5; /* A shade of teal for a pop of color */
+    text-align: center;
+}
+
+#about .about-me p, 
+#about .current-endeavors p, 
+#about .glimpse-world p {
+    background-color: #2a2d34; /* A slightly lighter shade of black for content boxes */
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    border-left: 4px solid #00adb5; /* Adding a teal bar to the left */
+}
+
+#about .about-me,
+#about .current-endeavors,
+#about .glimpse-world {
+    margin-bottom: 20px;
+}
+
 /* Responsive typography and containers */
 @media (max-width: 768px) {
     header h1 {
@@ -69,5 +91,10 @@ footer {
     
     nav a {
         padding: 10px;
+    }
+    
+    /* Adjusting About section for mobile */
+    #about h2, #about h3 {
+        font-size: 1.5em;
     }
 }
