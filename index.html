@@ -9,7 +9,6 @@
 <body>
     <div class="matrix-background">
         <nav>
-            <!-- Navigation bar -->
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -22,21 +21,18 @@
         <header id="home">
             <h1>Hello. I'm Ciprian.</h1>
             <p>A Digital Craftsman.</p>
-            <!-- Additional intro text here -->
         </header>
 
         <section id="about">
-            <!-- About Me section -->
             <h2>About</h2>
             <p>Details about Ciprian...</p>
         </section>
 
         <section id="work">
-            <!-- Skillset and Experience section -->
             <h2>Work</h2>
+            <!-- Frontend Development -->
             <div class="skill-category">
                 <h3>Frontend Development</h3>
-                <p>Skilled in creating dynamic and responsive user interfaces using:</p>
                 <ul>
                     <li>React & Next.js</li>
                     <li>JavaScript (ES6+)</li>
@@ -44,19 +40,17 @@
                     <li>HTML5 & CSS3</li>
                 </ul>
             </div>
-            
+            <!-- Backend Development -->
             <div class="skill-category">
                 <h3>Backend Development</h3>
-                <p>Developing server-side logic and APIs using:</p>
                 <ul>
                     <li>Python</li>
                     <li>Bash scripting for Linux & Unix systems</li>
                 </ul>
             </div>
-            
+            <!-- Version Control and Development Methodologies -->
             <div class="skill-category">
                 <h3>Version Control and Development Methodologies</h3>
-                <p>Proficient in modern code versioning and team collaboration tools:</p>
                 <ul>
                     <li>Git & Gerrit for version control</li>
                     <li>Agile methodologies including Scrum, facilitated through Jira</li>
@@ -64,20 +58,18 @@
                     <li>Confluence for documentation and knowledge sharing</li>
                 </ul>
             </div>
-            
+            <!-- Operating Systems -->
             <div class="skill-category">
                 <h3>Operating Systems</h3>
-                <p>Comfortable working across different operating systems:</p>
                 <ul>
                     <li>Linux</li>
                     <li>MacOS</li>
                     <li>Windows</li>
                 </ul>
             </div>
-            
+            <!-- Video Editing and Multimedia Processing -->
             <div class="skill-category">
                 <h3>Video Editing and Multimedia Processing</h3>
-                <p>Experienced in multimedia production and editing:</p>
                 <ul>
                     <li>Final Cut & Avid Media Composer for video editing</li>
                     <li>Sorenson Squeeze, TMPGEnc, Telestream FlipFactory, and Canopus ProCoder for media encoding and processing</li>
@@ -88,14 +80,45 @@
             </div>
         </section>
 
-        <!-- Add other sections like Writings, Chat, etc. -->
+        <section id="writings">
+            <h2>Writings</h2>
+            <div class="writing-entry">
+                <a href="https://itisciprian.hashnode.dev/mastering-the-this-keyword-in-javascript" target="_blank">Mastering the `this` Keyword in JavaScript</a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-entry">
+                <a href="https://github.com/ItIsCiprian/Random-Password-Generator" target="_blank">Random Password Generator</a>
+            </div>
+            <div class="project-entry">
+                <a href="https://github.com/ItIsCiprian/dev-environment-files" target="_blank">Development Environment Files</a>
+            </div>
+            <div class="project-entry">
+                <a href="https://github.com/ItIsCiprian/Minecraft-Clicker" target="_blank">Minecraft Clicker</a>
+            </div>
+            <div class="project-entry">
+                <a href="https://github.com/ItIsCiprian/Web-Development-Bootcamp" target="_blank">Web Development Bootcamp</a>
+            </div>
+        </section>
+
+        <section id="chat">
+            <h2>Chat with Me</h2>
+            <div class="chat-container">
+                <div class="chat-box">
+                    <div class="chat-messages"></div>
+                    <input type="text" id="chat-input" placeholder="Say something..." />
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </section>
 
         <footer>
-            <!-- Contact and social media links -->
             <p>Let's Connect:</p>
             <p>Email: <a href="mailto:ionutcipriananescu@gmail.com">ionutcipriananescu@gmail.com</a></p>
-            <!-- Social media links here -->
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
