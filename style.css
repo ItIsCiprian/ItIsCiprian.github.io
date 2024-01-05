@@ -1,12 +1,17 @@
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Style resets and global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     color: #cfd2d6;
     font-family: 'Roboto', sans-serif;
-    background: #0a0c0d;
+    background-color: #0a0c0d;
+    background-image: url('background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+/* Navigation styles */
 nav {
     background-color: #222831;
     text-align: center;
@@ -34,6 +39,7 @@ nav a:hover {
     color: #eeeeee;
 }
 
+/* Header styles */
 header {
     text-align: center;
     padding: 50px 10px;
@@ -51,16 +57,101 @@ header p {
     color: #cfd2d6;
 }
 
-main {
-    background: rgba(0, 0, 0, 0.8);
+/* Section styles */
+section {
+    margin: 20px;
     padding: 20px;
+    background-color: rgba(35, 39, 42, 0.9);
     border-radius: 5px;
 }
 
-section {
-    margin-bottom: 40px;
+/* About section styles */
+section#about h2, section#work h2, section#writings h2, section#projects h2, section#chat h2 {
+    color: #00adb5;
+    text-align: center;
 }
 
+/* Work section styles */
+.skill-category h3 {
+    color: #00adb5;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* Writings section styles */
+.writing-entry {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.writing-entry a {
+    color: #00adb5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Projects section styles */
+.project-entry {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.project-entry a {
+    color: #00adb5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Chat section styles */
+.chat-container {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.chat-box {
+    position: relative;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #222;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#chat-input {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+#send-btn {
+    width: 80px;
+    background: #00adb5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background: #058d8f;
+}
+
+/* Footer styles */
 footer {
     background-color: #222831;
     text-align: center;
@@ -68,8 +159,18 @@ footer {
     font-size: 1em;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
     header h1 {
         font-size: 2em;
+    }
+
+    .skill-category, .writing-entry, .project-entry, .chat-container {
+        padding: 10px;
     }
 }
