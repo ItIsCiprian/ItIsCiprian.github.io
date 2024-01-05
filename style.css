@@ -159,6 +159,15 @@ footer {
     font-size: 1em;
 }
 
+footer a {
+    color: #00adb5; /* Same color as other links on the site */
+    text-decoration: none; /* Removes underline from links */
+}
+
+footer a:hover {
+    color: #eeeeee; /* Color for hover state, if you want it to change on hover */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     nav li {
