@@ -66,7 +66,7 @@ section {
 }
 
 /* About section styles */
-section#about h2, section#work h2, section#writings h2, section#projects h2, section#chat h2 {
+section#about h2, section#Skillset h2, section#writings h2, section#projects h2, section#chat h2 {
     color: #00adb5;
     text-align: center;
 }
