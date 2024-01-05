@@ -1,100 +1,75 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    color: #cfd2d6; /* Lighter text color for better readability */
-    font-family: 'Roboto', sans-serif; /* More modern font than Courier New */
-    background-color: #0a0c0d; /* Dark background color to match the background image */
-    background-image: url('background.jpg'); /* Use the actual file name */
-    background-size: cover;
-    background-attachment: fixed;
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #cfd2d6;
+    font-family: 'Roboto', sans-serif;
+    background: #0a0c0d;
 }
 
 nav {
-    /* Simplified navigation bar at the top */
-    background-color: #222831; /* Darker shade for nav to blend with the background */
-    overflow: hidden;
+    background-color: #222831;
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav ul {
+    list-style: none;
     padding: 0;
-    list-style-type: none;
-    text-align: center;
+    margin: 0;
 }
 
 nav li {
     display: inline;
+    margin-right: 20px;
 }
 
 nav a {
-    display: inline-block;
-    color: #00adb5; /* A shade of teal for a pop of color */
+    color: #00adb5;
     text-decoration: none;
-    padding: 14px 16px;
+    font-size: 1.2em;
 }
 
 nav a:hover {
-    background-color: #393e46; /* A slightly lighter shade for hover effect */
-    color: #eeeeee; /* Bright color for text on hover */
+    color: #eeeeee;
 }
 
 header {
     text-align: center;
-    padding: 100px 10px;
+    padding: 50px 10px;
 }
 
 header h1 {
-    font-size: 2.5em;
+    margin: 0;
+    font-size: 3em;
+    color: #00adb5;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #cfd2d6;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5px;
 }
 
 section {
-    background-color: rgba(35, 39, 42, 0.9); /* Semi-transparent black for readable sections */
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    color: #cfd2d6; /* Match the text color to the body */
+    margin-bottom: 40px;
 }
 
 footer {
+    background-color: #222831;
     text-align: center;
     padding: 20px;
-    background-color: #222831; /* Matching the nav bar */
+    font-size: 1em;
 }
 
-/* About section styles */
-#about h2, #about h3 {
-    color: #00adb5; /* A shade of teal for a pop of color */
-    text-align: center;
-}
-
-#about .about-me p, 
-#about .current-endeavors p, 
-#about .glimpse-world p {
-    background-color: #2a2d34; /* A slightly lighter shade of black for content boxes */
-    padding: 15px;
-    border-radius: 4px;
-    margin: 10px 0;
-    border-left: 4px solid #00adb5; /* Adding a teal bar to the left */
-}
-
-#about .about-me,
-#about .current-endeavors,
-#about .glimpse-world {
-    margin-bottom: 20px;
-}
-
-/* Responsive typography and containers */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
-    }
-    
-    nav a {
-        padding: 10px;
-    }
-    
-    /* Adjusting About section for mobile */
-    #about h2, #about h3 {
-        font-size: 1.5em;
     }
 }
